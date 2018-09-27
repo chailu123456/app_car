@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    	<link rel="icon" href="../../images/ico.ico">
+    	<link rel="stylesheet" type="text/css" href="../../css/global.css"/>
+    	<link rel="stylesheet" type="text/css" href="../../css/cd/stat_detail.css"/>
+		<title>电站详情</title>
+	</head>
+	<script type="text/javascript">
+	    document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    window.onresize = function(){
+	        document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    }
+	</script>
+	<body>
+		<div id="allmap"></div>
+		<div class="stat_adress">
+			<div class="bg">
+				<p>
+					<span class="e_adress"></span>
+					<a class="targit" href=""><img src="../../images/cd/daohang.png"/>导航前往</a>
+				</p>
+				<div class="time">开放时间：00:00-23:59</div>
+				<div class="s_ad">
+					<img src="../../images/cd/ditu.png"/>
+					<span class="d_adress"></span>
+				</div>
+			</div>
+		</div>
+		<div class="station">
+			<div class="details">
+				<p>
+					<em><img src="../../images/cd/fuwufei.png"/>服务费：</em>
+					<i class="serve_m">0.0007元/度</i>
+				</p>
+				<div class="elec"><img src="../../images/cd/dianfei.png"/>电费</div>
+				<ul class="eleclist">
+					<li>(00:00-07:00) <i class="one"></i>元/度</li>
+			
+				</ul>
+				<div class="arrow">
+					<img src="../../images/cd/sanjiao_1.png"/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="tabbg">
+			<div class="tab">
+				<span class="ins">详情</span>
+				<span>车位</span>
+			</div>	
+			<div class="tabcont tabcontone">
+				<!--<div class="b_code">
+					<img src="../../images/cd/kuai_big.png"/>
+					<p><i>编号：</i><span class="soc"></span><em></em></p>
+					<p></p>
+				</div>-->
+				
+			</div>
+			<div class="tabcont">
+				<p class="elec_free">停车费：<i class="car_m"></i></p>
+				<p class="elec_free">车位号：<i class="car_code"></i></p>
+				<p class="elec_free">引   导：<i class="car_go"></i></p>
+			</div>
+		</div>
+		
+
+	</body>
+	<script type="text/javascript" src="../../js/jquery.min.js" ></script>
+	<script type="text/javascript" src="../../js/md/core.js"></script>
+	<script type="text/javascript" src="../../js/md/cipher-core.js"></script>
+	<script type="text/javascript" src="../../js/md/tripledes.js"></script>
+	<script type="text/javascript" src="../../js/md/mode-ecb.js"></script>
+	<script type="text/javascript" src="../../js/common.js" ></script>
+	<script type="text/javascript" src="../../js/cd/stat_detail.js" ></script>
+</html>

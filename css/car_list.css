@@ -1,0 +1,255 @@
+/*---立即用车列表--*/
+.tab {
+	width: 96%;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 4%;
+	margin-top: 4%;
+	border-bottom: 1px solid #ccc;
+}
+.tab span {
+	float: left;
+	width: 29.33%;
+	padding: 0 2%;
+	color: #0b1222;
+	font-size: 1rem;
+	text-align: center;
+}
+.tab span.sele {
+	font-weight: 700;
+	border-bottom: 2px solid #0b1222;
+}
+
+.carnet {
+	width: 96%;
+	height: 3rem;
+	line-height: 3rem;
+	background: #171e2e;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 4px;
+}
+.carnet img {
+	float: left;
+	width: 6%;
+	margin-top: 3%;
+	margin-left: 2%;
+}
+.carnet span {
+	color: #fff;
+	font-size: 1rem;
+	margin-left: 2%;
+}
+.carnet em {
+	color: #6E717B;
+	font-size: 0.9rem;
+	float: right;
+	margin-right: 4%;
+}
+
+.car_list {
+	width: 96%;
+	height: 100%;
+	display: none;
+}
+.all {
+	display: block;
+}
+.car_list li {
+	width: 100%;
+	height: 8rem;
+	background:  #F7F7F7;
+	overflow: hidden;
+	margin-top: 6%;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.car_left {
+	width: 38%;
+	height: 100%;
+	float: left;
+}
+.car_left p {
+	width: 100%;
+	text-align: center;
+	margin-top:2%;
+}
+.car_left p:first-child {
+	
+}
+.car_left p:last-child {
+	margin-top: 10%;
+	font-size: 0.86rem;
+	color:#6E717B;
+}
+.car_left p img {
+	width: 80%;
+	margin-top: 12%;
+}
+.car_right {
+	width: 62%;
+	height: 100%;
+	float: right;
+	background: #171e2e;
+}
+.car_right p {
+	width: 90%;
+}
+.car_right p:first-child {
+	
+	line-height: 2.5rem;
+	overflow: hidden;
+} 
+.car_right p:first-child i {
+	width: 50%;
+	float: left;
+	font-size: 1rem;
+	color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.car_right p:first-child span {
+	float: right;
+	width: 50%;
+	margin-right: -4%;
+}
+.car_right p:first-child span img {
+	width: 24%;
+	margin-left: 32%;
+	float: left;
+	margin-top: 13.5%;
+}
+.car_right p:first-child span em {
+	font-size: 0.8rem;
+	float: left;
+    margin-left: 4%;
+	color:  #51E7D3;
+}
+.car_right p:nth-child(2) {
+	font-size: 0.86rem;
+	line-height: 2rem;
+	overflow: hidden;
+
+} 
+.car_right p:nth-child(2) em{
+	color: #6E717B;
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 12px;
+}
+.car_right p:nth-child(2) span{
+	color: #6E717B;
+	font-size: 12px;
+}
+.car_right p:nth-child(2) i{
+	color: #6E717B;
+	font-size: 12px;
+}
+
+.car_right p:last-child {
+	height: 60px;
+	height: 60px;
+}
+
+.car_right p:last-child em {
+	float: left;
+	width: 44%;
+	    height: 26px;
+    line-height: 26px;
+	background: #51e7d3;
+	color: #000;
+	font-size: 0.9rem;
+	text-align: center;
+	border-radius: 15px;
+	border: 1px solid #51e7d3;
+	margin-top: 4%;
+}
+.car_right p:last-child a {
+	float: left;
+	margin-left: 6%;
+	width: 44%;
+	    height: 26px;
+    line-height: 26px;
+	background: none;
+	border-radius: 15px;
+	border: 1px solid #51e7d3;
+	font-size: 0.9rem;
+	color: #51e7d3;
+	margin-top: 4%;
+}
+.car_right p:last-child a img{
+	width: 12%;
+    margin-right: 10%;
+    margin-left: 22%;
+    float: left;
+    margin-top: 6%;
+}
+
+.net_carlist {
+	width: 100%;
+	height: 100%;
+}
+.net_carlist li {
+	width: 100%;
+	height: 140px;
+	background: #e6e6e6;
+	overflow: hidden;
+
+}
+/*---立即用车列表--*/
+
+.prompt {
+	z-index: 3;
+	background: none;
+	position: relative;
+	display: none;
+}
+.bg_box {
+	position: fixed;
+    width: 60%;
+    height: 12rem;
+    z-index: 9;
+    top: 30%;
+    left: 20%;
+    background: #fff;
+    text-align: center;
+}
+.bg_box h3 {
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 1.2rem;
+}
+.bg_box .descript {
+	color: red;
+	margin-top: 6%;
+}
+.iknow {
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+	background: #171e2e;
+	color: #fff;
+	position: absolute;
+    bottom: 0;
+    color: #33e6e6;
+    font-weight: 700;
+}
+.iknow a {
+	color: #fff;
+}
+
+.showmsg {
+    position: fixed;
+    text-align: center;
+    width: 70%;
+    height: 2rem;
+    line-height: 2rem;
+    background: #eaeaea;
+    left: 15%;
+    top: 80%;
+    font-size: 0.8rem;
+    border-radius: 1.5rem;
+    display: none;
+    z-index: 99;
+}

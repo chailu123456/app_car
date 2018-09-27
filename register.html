@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<link rel="icon" href="images/ico.ico">
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<title>注册</title>
+	</head>
+	<style>
+		.getnum {
+		    width: 38%;
+		    height: 30px;
+		    line-height: 30px;
+		    background: #1b2130;
+		    color: #FFFFFF;
+		    font-size: 12px;
+		    border: none;
+		    border-radius: 20px;
+		}
+	</style>
+	<body>
+		<div class="login">
+			<input type="text" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="请输入手机号" id="mobile" />
+			<div class="back">
+				<input type="text" onkeyup="value=value.replace(/[^\d]/g,'')" class="msgback" placeholder="请输入验证码"/>
+				<!--<input type="button" class="getnum" id="" value="获取验证码" />-->
+				<button class="getnum">获取验证码</button>
+			</div>
+			<input type="password" maxlength="11" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" style="ime-mode:disabled" placeholder="请设置密码" id="proving" />
+			<p></p>
+			<div class="go_login">立即注册</div>
+			<div class="logining">立即注册</div>
+		</div>
+		<div class="showmsg"></div>
+		<img class="load" src="images/load.gif"/>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/md/core.js"></script>
+    <script type="text/javascript" src="js/md/cipher-core.js"></script>
+    <script type="text/javascript" src="js/md/tripledes.js"></script>
+    <script type="text/javascript" src="js/md/mode-ecb.js"></script>
+    <script type="text/javascript" src="js/common.js" ></script>
+    <script type="text/javascript" src="js/md5.js" ></script>
+	<script type="text/javascript" src="js/register.js" ></script>
+
+</html>

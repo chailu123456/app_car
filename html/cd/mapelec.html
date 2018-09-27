@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    	<link rel="icon" href="../../images/ico.ico">
+    	<link rel="stylesheet" type="text/css" href="../../css/global.css"/>
+    	<link rel="stylesheet" type="text/css" href="../../css/cd/mapelec.css"/>
+		<title>桩点地图</title>
+	</head>
+	<style type="text/css">
+	.dws {
+		display: block;
+	}
+	.centerlogo {
+	    width: 4%;
+    	/*height: 24px;*/
+    	top: 48%;
+	    left: 49%;
+	    z-index: 9;
+	    position: absolute;
+	}
+	</style>
+	<body>
+		<div id="allmap"></div>
+		<a href="javascript:void(0)" class="dws"><img class="centerlogo" src="../../images/xxxx.png"/></a>
+		<div class="bg_a">
+			<div class="s_list">
+				<p class="statId">
+					<span class="d_adr"></span>
+					<i><img src="../../images/cd/lbjt.png"/></i>
+					<em class="d_free"></em>
+				</p>
+				<div class="c_adress">
+					<img src="../../images/cd/ditu.png"/>
+					<span class="d_detail"></span>
+					<em class="distance"></em>
+				</div>
+				<div class="spare">
+					<span>
+						<img src="../../images/cd/kuai.png"/>
+						<i class="d_fast"></i>
+					</span>
+					<span>
+						<img src="../../images/cd/man.png"/>
+						<i class="d_man"></i>
+					</span>
+					<span>
+						<img src="../../images/cd/zong.png"/>
+						<i class="d_all"></i>
+					</span>
+				</div>
+				<a class="go_cd" href="#"><img src="../../images/cd/daohang.png"/>前往充电</a>
+			</div>
+		</div>
+		<div class="lobo_c">
+			<a href="cd_index.html">
+				<img src="../../images/cd/chongdian.png"/>
+			</a>
+		</div>
+		<img class="load" src="../../images/load.gif"/>
+		<img class="cdzn" src="../../images/cd/zdsm.png"/>
+		<span class="c_lists"><img class="cdlb" src="../../images/cd/zdlb_icon.png"/></span>
+	</body>
+	<script type="text/javascript" src="../../js/jquery.min.js" ></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=m8OyLlNS9lh5CHFpl8BfO6a8uZ8abAUC"></script>
+	<script type="text/javascript" src="../../js/md/core.js"></script>
+	<script type="text/javascript" src="../../js/md/cipher-core.js"></script>
+	<script type="text/javascript" src="../../js/md/tripledes.js"></script>
+	<script type="text/javascript" src="../../js/md/mode-ecb.js"></script>
+	<script type="text/javascript" src="../../js/common.js" ></script>
+	<script type="text/javascript" src="../../js/cd/mapelec.js"></script>
+</html>

@@ -1,0 +1,81 @@
+ul {
+	width: 96%;
+	overflow: hidden;
+}
+ul li {
+	background: #1B2130;
+	box-shadow: 5px 5px 9px 0 rgba(0,0,0,0.05);
+	border-radius: 5px;
+	margin-top: 4%;
+	color: #fff;
+	float: left;
+	padding-bottom:4%;
+}
+.statname {
+	float: left;
+    width: 100%;
+        padding: 3%;
+}
+.statname img.loca{
+	float: left;
+    width: 0.8rem;
+    margin-top: 1%;
+}
+.statname img.arrow{
+	float: right;
+    width: 2%;
+    margin-top: 1%;
+    margin-right: 4%;
+
+}
+.statname p {
+	float: left;
+	width: 90%;
+}
+.statname p span{
+	float: left;
+    font-size: 1.1rem;
+    margin-left: 4%;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.statname .times {
+	width: 100%;
+    color: #6E717B;
+    float: left;
+    font-size: 12px;
+    margin-left: 8%;
+}
+.discount {
+	width: 80%;
+    float: left;
+    padding: 0 10%;
+}
+.discount span{
+	float: left;
+	    width: 50%;
+	font-size: 0.9rem;
+	line-height: 2rem;
+}
+.discount span i{
+	
+}
+.givemonet {
+	float: right;
+	margin-right: 8%;
+	font-size: 0.9rem;
+	margin-top: 2%;
+}
+.givemonet i {
+	color: #FF520C;
+	font-size: 1.2rem;
+	
+}
+.load {
+    position: absolute;
+    z-index: 9;
+    top: 54%;
+    right: 40%;
+}

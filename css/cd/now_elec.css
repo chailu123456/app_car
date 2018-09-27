@@ -1,0 +1,132 @@
+
+body {
+	background: #fff;
+}
+.bg {
+	width:96%;
+	background: #1B2130;
+	color: #fff;
+	border-radius: 4px;
+}
+.end_adress {
+	padding: 4%;
+}
+.elec_z {
+	font-size: 1.2rem;
+	line-height: 2.5rem;
+}
+.z_code {
+	font-size: 0.9rem;
+	line-height: 2.5rem;
+}
+.acount {
+	width: 100%;
+}
+.acount span {
+	width: 40%;
+	background:#323745;
+	display: inline-block;
+	padding: 2px;
+	font-size: 0.8rem;
+	color: #6E717B;
+	margin-left: 2%;
+}
+.acount span img {
+	width: 0.6rem;
+	margin-top: 2%;
+    margin-right: 4%;
+    margin-left: 2%;
+}
+.acount span:first-child {
+	width: 36%;
+}
+.acount span:first-child img {
+	width: 0.4rem;
+}
+.lastmoney {
+	text-align: center;
+	    margin-top: 6%;
+}
+.lastmoney h4 {
+	width: 200px;
+	    overflow: hidden;
+	font-weight: 400;
+	font-size: 3rem;
+	color: #FF520C;
+	margin-top: 3rem;
+	    height: 11rem;
+    overflow: hidden;
+}
+.lastmoney span {
+	font-size: 0.9rem;
+	color: #6E717B;
+}
+
+ul {
+	width: 92%;
+	overflow: hidden;
+	margin-top: 10%;
+}
+ul li {
+	float: left;
+	width: 33%;
+	text-align: center;
+	line-height: 2.5rem;
+	font-size: 0.8rem;
+	margin-top: 6%;
+}
+ul li span {
+	display: block;
+	line-height: 1rem;
+}
+ul li em {
+	font-weight: 700;
+	font-size: 1rem;
+}
+.stop_e {
+	width: 80%;
+	height: 3rem;
+	background: #FFFFFF;
+	border: 1px solid #0B1222;
+	box-shadow: 2px 2px 4px 0 rgba(11,18,34,0.20);
+	border-radius: 1.5rem;
+	font-size: 1.2rem;
+	margin-left: 10%;
+	margin-top: 12%;
+}
+.cd_type {
+	position: absolute;width: 100%;
+	text-align: center;
+	margin-top: 23%;
+	color: #08c1af;
+	font-size: 1.5rem;
+}
+.knows {
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+	background: #000;
+	opacity: 0.8;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	display: none;
+}
+.knows p{
+	position: absolute;
+    color: #fff;
+ 
+    text-align: left;
+    border-radius: 4px;
+    padding: 4%;
+    bottom: 28%;
+    left: 24%;
+    font-weight: 700;
+}
+.close {
+	position: absolute;
+    top: 36%;
+    width: 19%;
+    left: 41%;
+}

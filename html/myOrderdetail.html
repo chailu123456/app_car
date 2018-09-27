@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>订单详情</title>
+		<link rel="icon" href="../images/ico.ico">
+    	<link rel="stylesheet" type="text/css" href="../css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/myOrderdetail.css"/>
+	</head>
+	<body>
+		<div class="img">
+			<img src="../images/ywc.png"/>
+		</div>
+		<div class="orderdetail">
+			<div class="orderOne">
+				<p>用车时间</p>
+				<div class="timeing">
+					<p>
+						<span>开始时间</span>
+						<em class="stat_time"></em>
+					</p>
+					<p>
+						<span>结束时间</span>
+						<em class="last_time"></em>
+					</p>
+				</div>
+				<p>用车详情</p>
+				<div class="timeing">
+					<p>
+						<span>用车类型</span>
+						<em class="usetype">自驾租车</em>
+					</p>
+					<p>
+						<span>计费类型</span>
+						<em class="ordtype">分时租赁</em>
+					</p>
+					<p>
+						<span>订单编号</span>
+						<em class="ord_code"></em>
+					</p>
+				</div>
+				<p>消费明细</p>
+				<div class="timeing">
+					<p>
+						<span>里程费<i class="kil_free"></i></span>
+						<em class="kilimF">0元</em>
+					</p>
+					<p>
+						<span>时长费</span>
+						<em class="timeF"></em>
+					</p>
+					<p>
+						<span>电量费用</span>
+						<em class="elec_free"></em>
+					</p>
+				</div>
+				<p>服务费用</p>
+				<div class="timeing">
+					<p>
+						<span>挪车费用</span>
+						<em class="ncarF"></em>
+					</p>
+			
+				</div>
+				<div class="allmoney">
+					<span>总计费用</span>
+					<em></em>
+				</div>
+				<div class="autopay">
+					<span>实际付款</span>
+					<em></em>
+				</div>
+			</div>
+			<div class="tell">提示：消费不满9元，按最低9元计算！</div>
+			<div class="discount">本次订单为您优惠<span>4.5</span>元</div>
+
+		</div>
+		<div class="showmsg"></div>
+		<img class="load" src="../images/load.gif"/>
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js" ></script>
+	<script type="text/javascript" src="../js/md/core.js"></script>
+	<script type="text/javascript" src="../js/md/cipher-core.js"></script>
+	<script type="text/javascript" src="../js/md/tripledes.js"></script>
+	<script type="text/javascript" src="../js/md/mode-ecb.js"></script>
+	<script type="text/javascript" src="../js/common.js" ></script>
+	<script type="text/javascript" src="../js/myOrderdetail.js" ></script>
+</html>

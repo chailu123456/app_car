@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    	<link rel="icon" href="../../images/ico.ico">
+    	<link rel="stylesheet" type="text/css" href="../../css/global.css"/>
+    	<link rel="stylesheet" type="text/css" href="../../css/cd/end_order.css"/>
+		<title>充电结束</title>
+	</head>
+	<script type="text/javascript">
+	    document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    window.onresize = function(){
+	        document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    }
+	</script>
+	<body>
+		<div class="bg">
+			<div class="end_adress">
+				<p class="elec_z"></p>
+				<p class="z_code">终端编号：<span></span></p>
+				<div class="acount">
+					<span><img src="../../images/cd/dianfei.png"/>电费：<i class="d_free"></i>元/度</span>
+					<span><img src="../../images/cd/fuwufei.png"/>服务费：<i class="s_free"></i>元/度</span>
+				</div>
+			</div>
+		</div>
+		<div class="lastmoney">
+			<h4 class="cf_fy"></h4>
+			<span>充电费用(/元)</span>
+		</div>
+		<ul>
+			<li>
+				<span>已充电量</span>
+				<em class="has_elec"></em>
+			</li>
+			<li>
+				<span>已充时长</span>
+				<em class="h_time"></em>
+			</li>
+			<li>
+				<span>退回金额 </span>
+				<em class="back_m"></em>
+			</li>
+			<li>
+				<span>完成时间</span>
+				<em class="cd_dy"></em>
+			</li>
+			<li>
+				<span>优惠金额  </span>
+				<em class="cd_dl"></em>
+			</li>
+			<!--<li>
+				<span>充电站id </span>
+				<em class="df_zk"></em>
+			</li>-->
+		</ul>
+		
+		<a class="backindex" href="cd_index.html">返回首页</a>
+		<div class="showmsg"></div>	
+	</body>
+	<script type="text/javascript" src="../../js/jquery.min.js" ></script>
+	<script type="text/javascript" src="../../js/md/core.js"></script>
+	<script type="text/javascript" src="../../js/md/cipher-core.js"></script>
+	<script type="text/javascript" src="../../js/md/tripledes.js"></script>
+	<script type="text/javascript" src="../../js/md/mode-ecb.js"></script>
+	<script type="text/javascript" src="../../js/common.js" ></script>
+	<script type="text/javascript" src="../../js/cd/end_order.js"></script>
+</html>

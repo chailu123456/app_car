@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    	<link rel="icon" href="../images/ico.ico">
+    	<link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    	<link rel="stylesheet" type="text/css" href="../css/car_detail.css"/>
+		<title>选择套餐</title>
+	</head>
+	<script type="text/javascript">
+	    document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    window.onresize = function(){
+	        document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    }
+	</script>
+	<body>
+	<!--- 点击立即用车显示车辆信息 --->
+	<section class="net_cardetail users">
+		<ul class="car_user">
+			<li>
+				<div class="carleft">
+					<img class="imgsrc" src="../images/car.jpg"/>
+					<p class="car_name"></p>
+				</div>
+				<div class="carRight">
+					<p>
+						<img src="../images/chepai .png"/>
+						<span class="car_p"></span>
+					</p>
+					<p>
+						<img src="../images/dianchi.png"/>
+						<span><i class="car_e"></i>%</span>
+					</p>
+					<p>
+						<img src="../images/licheng.png"/>
+						
+						<span><i class="car_k"></i>公里</span>
+					</p>
+				</div>
+			</li>
+		</ul>
+		
+		<!--提示   默认隐藏-->
+		<div class="showmsg"></div>
+		<!--提示-->
+		
+		
+		<div class="meal_one">
+			<div class="title">
+				<span>分时租赁</span><i>电度+里程+时长</i>
+				<img class="sele_time" src="../images/right.jpg"/>
+			</div>
+			<div class="cost_introd">
+				<span>电度费</span>
+				<em><i class="elec_m"></i>/公里</em>
+			</div>
+			<div class="cost_introd">
+				<span>里程费</span>
+				<em><i class="kilometer_m"></i>/公里</em>
+			</div>
+			<div class="s_introd">
+				<div class="slide"><span class="time_m">时长费</span><img src="../images/slide.jpg" alt="" /></div>
+				<p class="schedule">
+			
+				</p>
+			</div>
+		</div>
+		<div class="meal_two">
+			<div class="title">
+				<span class="day_m">日套餐</span>
+				<img class="seleday" src="../images/no_select.jpg" alt=""/>
+			</div>
+			<div class="cost_introd">
+				<span>套餐费</span>
+				<em><i class="sele_day"></i>元/天,不足一天按一天算</em>
+			</div>
+		</div>
+		<button class="ok">确认用车<em>（预约保留30分钟）</em></button>
+	</section>
+	<!--- 点击立即用车显示车辆信息 --->
+		<img class="load" src="../images/load.gif"/>
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js" ></script>
+	<script type="text/javascript" src="../js/md/core.js"></script>
+	<script type="text/javascript" src="../js/md/cipher-core.js"></script>
+	<script type="text/javascript" src="../js/md/tripledes.js"></script>
+	<script type="text/javascript" src="../js/md/mode-ecb.js"></script>
+	<script type="text/javascript" src="../js/common.js" ></script>
+	<script type="text/javascript" src="../js/car_detail.js" ></script>
+</html>

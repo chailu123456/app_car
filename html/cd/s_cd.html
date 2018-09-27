@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    	<link rel="icon" href="../../images/ico.ico">
+    	<link rel="stylesheet" type="text/css" href="../../css/global.css"/>
+		<title>输码充电</title>
+	</head>
+	<style type="text/css">
+		p {
+			width: 92%;
+			margin-top: 14%;
+		}
+		#z_code {
+			display: block;
+			width: 92%;
+			line-height: 2.5rem;
+			border: none;
+			margin-top: 8%;
+			border-bottom: 1px solid #D2D4D6;
+			background: none;
+		}
+		button {
+			border: none;
+		    width: 82%;
+		    height: 2.8rem;
+		    line-height: 2.8rem;
+		    background: #1b2130;
+		    border-radius: 1.3rem;
+		    color: #51E7D3;
+		    font-size: 1.2rem;
+		    margin-left: 9%;
+		    margin-top:90%;
+		}
+		.showmsg {
+		    position: fixed;
+		    text-align: center;
+		    width: 70%;
+		    height: 2rem;
+		    line-height: 2rem;
+		    background: #eaeaea;
+		    left: 15%;
+		    top: 40%;
+		    font-size: 0.8rem;
+		    border-radius: 1.5rem;
+		    display: none;
+		    z-index: 99;
+		}
+	</style>
+	<body>
+		<p>输码充电</p>
+		<input type="text"  id="z_code" placeholder="请输入终端编码" />
+		<button>确定</button>
+		<div class="showmsg"></div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery.min.js" ></script>
+	<script type="text/javascript" src="../../js/md/core.js"></script>
+	<script type="text/javascript" src="../../js/md/cipher-core.js"></script>
+	<script type="text/javascript" src="../../js/md/tripledes.js"></script>
+	<script type="text/javascript" src="../../js/md/mode-ecb.js"></script>
+	<script type="text/javascript" src="../../js/common.js" ></script>
+	<script src="../../js/cd/s_cd.js"></script>
+</html>

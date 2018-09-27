@@ -1,0 +1,70 @@
+.box {
+	width: 96%;
+	
+}
+.z_code {
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 1rem;
+	background: #1B2130;
+	border-radius: 5px;
+	color: #fff;
+	padding-left: 10px;
+	margin-top: 8%;
+	margin-bottom: 6%;
+}
+.c_det {
+	line-height: 2.5rem;
+}
+.cs_list {
+	width: 94%;
+}
+.cs_list p {
+	line-height: 2rem;
+}
+.cs_list p span {
+	opacity: 0.5;
+	font-family: PingFangSC-Regular;
+	font-size: 0.8rem;
+	color: #171E2D;
+}
+.cs_list p em {
+	font-family: PingFangSC-Regular;
+	font-size: 0.8rem;
+	color: #0B1222;
+	letter-spacing: 0;
+	float: right;
+}
+
+.cs_time {
+	width: 94%;
+}
+.cs_time p {
+	line-height: 2rem;
+}
+.cs_time p span{
+	opacity: 0.5;
+	font-family: PingFangSC-Regular;
+	font-size: 0.8rem;
+	color: #171E2D;
+}
+
+.cs_time p em{
+	font-family: PingFangSC-Regular;
+	font-size: 0.8rem;
+	color: #0B1222;
+	letter-spacing: 0;
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+

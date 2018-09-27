@@ -1,0 +1,86 @@
+.bg {
+	width:96%;
+	background: #1B2130;
+	color: #fff;
+	border-radius: 4px;
+}
+.end_adress {
+	padding: 4%;
+}
+.elec_z {
+	font-size: 1.2rem;
+	line-height: 2.5rem;
+}
+.z_code {
+	font-size: 0.9rem;
+	line-height: 2.5rem;
+}
+.acount {
+	width: 100%;
+}
+.acount span {
+	width: 40%;
+	background:#323745;
+	display: inline-block;
+	padding: 2px;
+	font-size: 0.8rem;
+	color: #6E717B;
+	margin-left: 2%;
+}
+.acount span img {
+	width: 0.6rem;
+	margin-top: 2%;
+    margin-right: 4%;
+    margin-left: 2%;
+}
+.acount span:first-child {
+	width: 36%;
+}
+.acount span:first-child img {
+	width: 0.4rem;
+}
+.lastmoney {
+	text-align: center;
+}
+.lastmoney h4 {
+	font-weight: 400;
+	font-size: 3rem;
+	color: #FF520C;
+	margin-top: 3rem;
+}
+.lastmoney span {
+	font-size: 0.9rem;
+	color: #6E717B;
+}
+
+ul {
+	width: 92%;
+	overflow: hidden;
+	margin-top: 5rem;
+}
+ul li {
+	list-style: disc;
+	float: left;
+	width: 40%;
+	margin-left: 10%;
+	line-height: 2.5rem;
+	font-size: 0.8rem;
+}
+ul li em {
+	font-weight: 700;
+	font-size: 1rem;
+}
+.backindex {
+	display: block;
+    border: none;
+    width: 76%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    background: #1b2130;
+    border-radius: 1.3rem;
+    color: #4fdfcc;
+    font-size: 1.2rem;
+    margin-left: 12%;
+    margin-top: 20%;
+    text-align: center;
+}

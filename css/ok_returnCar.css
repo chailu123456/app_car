@@ -1,0 +1,110 @@
+/*---确认完毕---*/
+.ready_ok {
+	width: 100%;
+	left: 100%;
+	overflow: hidden;
+	text-align: center;
+	
+}
+.adress {
+	width: 14rem;
+	height: 14rem;
+	border-radius: 7rem;
+	border: 1px solid #4e4e4e;
+	text-align: center;
+	margin-top: 20%;
+	box-shadow: 0 0 6px #818286;
+}
+.adress h3 {
+	font-size: 1.4rem;
+	margin-top: 34%;
+	margin-bottom: 8%;
+}
+.adress span {
+	color: #6E717B;
+	font-size: 0.8rem;
+}
+.adress em {
+	display: block;
+}
+.this_m {
+	margin-top: 16%;
+	margin-bottom: 4%;
+	color: #171E2D;
+}
+.tell {
+	color: #FF520C;
+	font-size: 0.8rem;
+}
+.check_ok {
+	display: block;
+    border: none;
+    width: 76%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    background: #1b2130;
+    border-radius: 1.3rem;
+    color: #51E7D3;
+    font-size: 1.2rem;
+    margin-left: 12%;
+    margin-top: 22%;
+}
+/*---确认完毕---*/
+
+/*-------确认还车------*/
+.return_car {
+	width: 100%;
+	left: 0;
+	
+}
+.ready_c {
+	width: 80%;
+	margin: 16% auto;
+}
+.ready_c img {
+	width: 100%;
+}
+.finish {
+	display: inline-block;
+    border: none;
+    width: 76%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    background: #1b2130;
+    border-radius: 1.3rem;
+    color: #4fdfcc;
+    font-size: 1.2rem;
+    margin-left: 12%;
+    margin-top: 50%;
+}
+
+.showmsg {
+	position: fixed;
+    text-align: center;
+    width: 70%;
+    height: 2rem;
+    line-height: 2rem;
+    background: #fff;
+    left: 15%;
+    top: 70%;
+    font-size: 0.8rem;
+    border-radius: 1.5rem;
+    display: none;
+    z-index: 99;
+}
+.showmsg {
+	position: fixed;
+    text-align: center;
+    width: 70%;
+    height: 2rem;
+    line-height: 2rem;
+    background: #eaeaea;
+    left: 15%;
+    top: 70%;
+    font-size: 0.8rem;
+    border-radius: 1.5rem;
+    display: none;
+    z-index: 99;
+}
+/*-------确认还车------*/
+

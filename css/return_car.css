@@ -1,0 +1,294 @@
+/*---  取车成功页面 -----*/
+.deta_car {
+	height: 9rem;
+	width: 96%;
+    border-radius: 4px;
+	background: #F7F7F7;
+}
+.deta_car p {
+	color: #fff;
+}
+.deta_car p em {
+	color: #fff;
+}
+
+.start_one {
+	position: absolute;
+	width: 100%;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+}
+.tops {
+	width: 92%;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	background: #171e2e;
+	border-radius: 4px;
+	margin: 1rem auto;
+}
+.tops .tops_l {
+	float: left;
+}
+.tops_l img{
+	width: 14%;
+	float: left;
+	margin-top: 8%;
+    margin-left: 6%;
+}
+.tops_l span {
+	padding: 0 4%;
+	font-size: 1rem;
+	color: #fff;
+}
+.tops_l a {
+	display: inline-block;
+	width: 24%;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	border: 1px solid #51e7d3;
+	text-align: center;
+	color: #51e7d3;
+	border-radius: 4px;
+	font-size: 0.8rem;
+}
+.tops_r {
+	width: 30%;
+	float: right;
+}
+.tops_r span {
+	font-size: 0.8rem;
+	color: #ccc;
+}
+.tops_r i {
+	font-size: 1rem;
+	padding: 0 6%;
+	color: #fff;
+}
+.car_list {
+	width: 100%;
+	height: 100%;
+}
+.car_list li {
+	width: 100%;
+	height: 140px;
+	background: #e6e6e6;
+	overflow: hidden;
+	margin-top: 6%;
+}
+.car_left {
+	width: 38%;
+	height: 100%;
+	float: left;
+}
+.car_left p {
+	width: 100%;
+	text-align: center;
+	margin-top:20px;
+}
+.car_left p:first-child {
+	/*margin-top: 30%;*/
+}
+.car_left p:last-child {
+	margin-top: 10%;
+	font-size: 0.86rem;
+    color: #6E717B;
+}
+.car_left p img {
+	width: 80%;
+	/*margin-top: 8%;*/
+}
+.car_right {
+	width: 62%;
+	height: 100%;
+	float: right;
+	background: #171e2e;
+	    border-radius: 4px;
+}
+.car_right p {
+	width: 90%;
+}
+.car_right p:first-child {
+
+	line-height: 3rem;
+	overflow: hidden;
+} 
+.car_right p:first-child i {
+	float: left;
+    width: 50%;
+    font-size: 1rem;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.car_right p:first-child span {
+	float: right;
+	width: 50%;
+}
+.car_right p:first-child span img {
+	width: 24%;
+    margin-left: 32%;
+    float: left;
+    margin-top: 17.5%;
+}
+.car_right p:first-child span em {
+	font-size: 0.8rem;
+    float: left;
+    margin-left: 4%;
+    color: #51E7D3;
+}
+.car_right p:nth-child(2) {
+	
+	line-height: 2rem;
+	overflow: hidden;
+	font-size: 12px;
+} 
+.car_right p:nth-child(2) em{
+	color: #6E717B;
+	display: inline-block;
+	margin-left: 10px;
+}
+.car_right p:nth-child(2) span{
+	color: #6E717B;;
+}
+.car_right p:nth-child(2) i{
+	color: #6E717B;
+}
+
+.car_right p:last-child {
+	
+	height: 60px;
+}
+
+.car_right p:last-child a {
+	float: left;
+	width: 44%;
+	
+	line-height: 30px;
+	background: #51e7d3;
+	color: #000;
+	text-align: center;
+	border-radius: 15px;
+	border: 1px solid #51e7d3;
+	margin-top: 0.6rem;
+}
+.car_right p:last-child a:last-child {
+	margin-left: 6%;
+	background: none;
+	color: #51e7d3;
+}
+.car_right p:last-child a:last-child img{
+	width: 30%;
+	height: 24px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 4px;
+}
+
+.net_carlist {
+	width: 100%;
+	height: 100%;
+}
+.net_carlist li {
+	width: 100%;
+	height: 140px;
+	background: #e6e6e6;
+	overflow: hidden;
+
+}
+
+.use_time {
+	width: 96%;
+    background: #171e2e;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 4px;
+    margin: 1rem auto;
+    color: #fff;
+    text-align: center;
+}
+.use_time span {
+	font-size: 1.2rem;
+}
+.btn_operate {
+	width: 96%;
+	border-radius:4px;
+	margin-top: 4%;
+	background: #171e2e;
+}
+
+.btn_operate p:first-child {
+	width: 90%;
+	height: 5rem;
+	color: #fff;
+	border-bottom: 2px solid #232a38;
+	    
+}
+.btn_operate p:first-child span {
+	float: left;
+	width: 49%;
+	text-align: center;
+	margin-top: 9%;
+}
+.btn_operate p:first-child span img {
+	width: 70%;
+	display: inline-block;
+	
+}
+.bord {
+	border-right: 2px solid #232a38;
+}
+.btn_operate p:last-child {
+	width: 90%;
+	height: 8rem;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	    
+}
+.btn_operate p:last-child span {
+	width: 33%;
+	text-align: center;
+	padding: 2rem 0;
+}
+.btn_operate p:last-child span.kai img {
+	width: 25%;
+}
+.btn_operate p:last-child span img {
+	width: 50%;
+}
+.btn_operate p:last-child span.suo img {
+	width: 24%;
+}
+.immediat_givecar {
+	position: absolute;
+	bottom: 10%;
+	width: 80%;
+	margin-left: 10%;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	color: #51E7D3;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 1.5rem;
+	background: #171e2e;
+}
+
+.showmsg {
+	position: fixed;
+    text-align: center;
+    width: 60%;
+    height: 2rem;
+    line-height: 2rem;
+    background: #eaeaea;
+    left: 20%;
+    top: 70%;
+    font-size: 0.8rem;
+    border-radius: 1.5rem;
+    display: none;
+    z-index: 99;
+}
+
+/*---  取车成功页面 -----*/

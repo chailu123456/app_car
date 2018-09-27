@@ -1,0 +1,79 @@
+
+.img {
+	width: 90%;
+	    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.img img {
+	width: 100%;
+}
+.orderdetail {
+	width: 94%;
+	margin-bottom: 8%;
+}
+.orderOne {
+	width: 100%;
+}
+.orderOne p {
+	height: 34px;
+	line-height: 34px;
+	
+}
+.timeing {
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-bottom: 1px solid #eee;
+}
+.timeing p{
+	width: 100%;
+	font-size: 15px;
+}
+.timeing p span{
+	float: left;
+	font-size: 13px;
+	color: #999;
+}
+.timeing p em{
+	float: right;
+	font-size: 13px;
+}
+.allmoney {
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+}
+.allmoney span {
+	
+}
+.allmoney em {
+	float: right;
+	 font-size: 13px;
+}
+.autopay {
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+}
+.autopay span {
+	
+}
+.autopay em {
+	float: right;
+	font-size: 13px;
+}
+
+.tell {
+	line-height: 40px;
+	color: #FF520C;
+	font-size: 0.8rem;
+	text-align: center;
+}
+.discount {
+	color: #6E717B;
+	font-size: 0.8rem;
+	text-align: center;
+}
+.discount span {
+	color: #9a9ca3;
+}

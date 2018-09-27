@@ -1,0 +1,105 @@
+/*---结算页面----*/
+.account_page {
+	width: 100%;
+	left: 0;
+}
+.account {
+	text-align: center;
+	height: 10rem;
+	
+}
+.account h2 {
+	margin-top: 12%;
+	margin-bottom: 4%;
+	font-size: 1rem;
+	
+}
+.account h2 em {
+	font-size: 3rem;
+	
+}
+.account p {
+	color: #6E717B;
+	font-size: 1rem;
+}
+.allmoney {
+	width: 94%;
+	margin: 0 auto;
+}
+.allmoney span,i {
+	color: #9c9c9c;
+}
+.consume_a p{
+	height: 2.2rem;
+	line-height: 2.2rem;
+}
+.consume_a p em {
+	float: right;
+}
+.tell {
+	text-align: center;
+}
+.discount {
+	text-align: center;
+}
+.con_title {
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 1.1rem;
+}
+.consume_c,.consume_d,.tell,.discount {
+	height: 2.2rem;
+	line-height: 2.2rem;
+}
+.consume_b p{
+	height: 2.2rem;
+	line-height: 2.2rem;
+}
+.consume_b p em {
+	float: right;
+}
+.consume_c em {
+	float: right;
+}
+.consume_d em {
+	float: right;
+}
+
+.discount {
+	color: #6E717B;
+	font-size: 0.8rem;
+}
+.discount span {
+	color: #9a9ca3;
+}
+.give_car {
+	display: block;
+    border: none;
+    width: 76%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    background: #1b2130;
+    border-radius: 1.3rem;
+    color: #51E7D3;
+    font-size: 1.2rem;
+    margin-left: 12%;
+    margin-top: 16%;
+}
+
+.give_car em {
+	font-size: 0.8rem;
+}
+.allmoney i.allmileage {
+	font-size: 0.8rem;
+	margin-left: 10px;
+}
+.allmoney i.alltimings {
+	font-size: 0.8rem;
+	margin-left: 10px;
+}
+
+.tell {
+	color: #FF520C;
+	font-size: 0.8rem;
+}
+/*---结算页面----*/

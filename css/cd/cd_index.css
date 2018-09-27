@@ -1,0 +1,92 @@
+.headbg {
+	width: 100%;
+}
+.bg {
+	width: 100%;
+	position: absolute;
+	    z-index: -1;
+}
+.headbg p {
+	width: 100%;
+	position: absolute;
+	color: #fff;
+	z-index: 9;
+	padding: 4%;
+	line-height: 2rem;
+}
+.headbg p img {
+	    float: left;
+    width: 1.4rem;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.headbg p span {
+	    float: left;
+    margin-left: 2%;
+    font-size: 0.9rem;
+}
+.select_cd {
+	width: 92%;
+	background: #FFFFFF;
+	margin-top: 36%;
+    float: left;
+    margin-left: 4%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.15);;
+}
+.select_cd span {
+	width: 50%;
+	text-align: center;
+	float: left;
+	margin: 6% 0;
+
+}
+.select_cd span img {
+	width: 50%;
+	margin-left: 25%;
+	display: block;
+}
+.select_cd p {
+	width: 100%;
+	float: left;
+	height: 3rem;
+}
+.select_cd p img {
+	float: left;
+}
+.select_cd p img:first-child {
+	width: 66%;
+}
+.select_cd p img:last-child {
+	width: 30%;
+	float: right;
+}
+.listmenu {
+	width: 90%;
+	float: left;
+}
+.listmenu a {
+	display: block;
+	height: 3.5rem;
+    line-height: 3.5rem;
+    padding-left: 6%;
+}
+.listmenu a span {
+	font-size: 1rem;
+}
+.listmenu a img {
+	float: left;
+	width: 5%;
+    margin-top: 6%;
+	margin-right: 1rem;
+}
+.listmenu a:last-child img {
+	width: 4%;
+}
+.listmenu a em {
+	color: #51e7d3;
+	margin-left: 10px;
+	padding: 2px 8px;
+	background: #0B1222;
+	border-radius: 5px;
+	font-size: 12px;
+}

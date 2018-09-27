@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    	<link rel="icon" href="../images/ico.ico">
+    	<link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    	<link rel="stylesheet" type="text/css" href="../css/car_list.css"/>
+		<title>共享汽车</title>
+	</head>
+	<script type="text/javascript">
+	    document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    window.onresize = function(){
+	        document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    }
+	</script>
+	<body>
+		<img class="load" src="../images/load.gif"/>
+	<!--- 点击立即用车车辆列表 --->
+	<section class="all_car">
+		<!--<div class="tab">
+			<span class="sele">全部车辆</span>
+			<span>基本车</span>
+			<span>优选车</span>
+		</div>-->
+		
+		<div class="carnet">
+			<img src="../images/wz.png"/>
+			<span class="adress_c"></span>
+			<em class="distance_c">距您约3公里</em>
+		</div>
+		
+		<ul class="car_list all">
+			
+		</ul>
+		<!--<ul class="car_list basic">
+			
+		</ul>
+		<ul class="car_list prior">
+			
+		</ul>-->
+	</section>
+
+	<div class="showmsg"></div>
+	
+			
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js" ></script>
+	<script type="text/javascript" src="../js/md/core.js"></script>
+	<script type="text/javascript" src="../js/md/cipher-core.js"></script>
+	<script type="text/javascript" src="../js/md/tripledes.js"></script>
+	<script type="text/javascript" src="../js/md/mode-ecb.js"></script>
+	<script type="text/javascript" src="../js/common.js" ></script>
+	<script type="text/javascript" src="../js/car_list.js"></script>
+</html>

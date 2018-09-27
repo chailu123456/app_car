@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<link rel="icon" href="images/ico.ico">
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<title>登录</title>
+	</head>
+	<style type="text/css">
+		.goregist {
+			color: dodgerblue;
+		}
+	</style>
+	<body>
+		<div class="login">
+			<input type="text" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="手机号" id="mobile" />
+	
+			<input type="password" maxlength="14" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" style="ime-mode:disabled" placeholder="密码" id="proving" />
+			<p></p>
+			<div class="noaccout">暂无账号，<span class="goregist">去注册</span></div>
+			<div class="yzlogin">立即登录</div>
+		</div>
+		<div class="showmsg"></div>
+		<img class="load" src="images/load.gif"/>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/md/core.js"></script>
+    <script type="text/javascript" src="js/md/cipher-core.js"></script>
+    <script type="text/javascript" src="js/md/tripledes.js"></script>
+    <script type="text/javascript" src="js/md/mode-ecb.js"></script>
+    <script type="text/javascript" src="js/common.js" ></script>
+    <script type="text/javascript" src="js/md5.js" ></script>
+	<script type="text/javascript" src="js/login.js" ></script>
+
+</html>

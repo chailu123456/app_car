@@ -1,0 +1,150 @@
+ #allmap {
+    position: absolute !important;
+        width: 100%;
+    height: 100%;
+}
+
+
+.bg_a {
+	position: absolute;
+	z-index: 9;
+	width: 96%;
+	border-radius: 5px;
+	color: #fff;
+	float: left;
+	margin-left: 2%;
+	bottom: -30%;
+}
+.bg_a .s_list  {
+	    width: 92%;
+	background: #1B2130;
+	padding: 4%;
+	padding-top: 2%;
+	float: left;
+	padding-bottom: 4%;
+	height: 6rem;
+	margin-top: 8%;
+	border-radius: 6px;
+}
+
+.bg_a .s_list p{
+	line-height: 2.5rem;
+}
+.bg_a .s_list p span {
+	font-size: 1rem;
+}
+ 
+.bg_a .s_list p i {
+	float: right;
+	width: 4%;
+    margin-top: 5%;
+}
+.bg_a .s_list p i img {
+	width: 36%;
+    float: right;
+    margin-top: -4%;
+}
+.bg_a .s_list p em {
+	float: right;
+	
+	color: #FF520C;
+	font-size: 0.8rem;
+}
+.lobo_c {
+	width: 100%;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    bottom: 4%;
+}
+.lobo_c img {
+	width: 30%;
+}
+.cdzn {
+	position: absolute;
+    z-index: 9;
+    width: 24%;
+    top: 4%;
+    left: 4%;
+}
+.cdlb {
+	position: absolute;
+    z-index: 9;
+    width: 24%;
+    top: 4%;
+    right: 4%;
+}
+.c_adress {
+	width: 100%;
+	float: left;
+	line-height: 2rem;
+}
+.c_adress img {
+	float: left;
+	margin-top: 3%;
+    width: 0.7rem;
+}
+.c_adress span {
+	float: left;
+	width: 70%;
+	font-size: 0.9rem;
+	color: #6E717B;
+	margin-left: 2%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.c_adress em{
+	float: right;
+	color: #6E717B;
+	font-size: 0.9rem;
+}
+.spare {
+	float: left;
+	width: 100%;
+}
+.spare span {
+	float: left;
+	text-align: center;
+	width: 33%;
+}
+.spare span:first-child {
+	text-align: left;
+}
+.spare span:last-child {
+	text-align: right;
+}
+.spare span i{
+	font-size: 0.8rem;
+}
+.spare span img {
+	width: 14%;
+	margin-top: 4%;
+    margin-right: 4%;
+}
+.go_cd {
+	float: left;
+	width: 50%;
+	height: 30px;
+	line-height: 30px;
+	background: #51E7D3;
+	border-radius: 13px;
+	text-align: center;
+	color: #0B1222;
+	margin-left: 25%;
+	margin-top: 2%;
+	font-size: 1rem;
+}
+.go_cd img {
+    width: 6%;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.load {
+    position: absolute;
+    z-index: 9;
+    top: 54%;
+    right: 45%;
+}

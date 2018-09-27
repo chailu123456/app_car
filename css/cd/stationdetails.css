@@ -1,0 +1,82 @@
+.station {
+	width: 96%;
+	margin-top: 4%;
+	background: #1b2130;
+	color: #fff;
+	border-radius: 6px;
+	    float: left;
+    margin-left: 2%;
+}
+.details {
+	padding: 4%;
+}
+.details p {
+	line-height: 2rem;
+}
+.details p.s_adress span{
+	font-size: 1.2rem;
+}
+.details p.s_adress em {
+	float: right;
+	font-size: 12px;
+	color: #51E7D3;
+}
+.details p:not(:first-child) em {
+	color: #6E717B;
+	font-size: 0.9rem;
+}
+.details p:not(:first-child) i {
+	font-size: 0.9rem;
+}
+.elec {
+	float: left;
+	font-size: 0.9rem;
+	color: #6E717B;
+}
+.eleclist {
+	float: left;
+	height: 3.4rem;
+	margin-left: 10%;
+	overflow: hidden;
+}
+.eleclist li {
+	font-size: 0.9rem;
+	line-height: 1.6rem;
+}
+.arrow {
+	float: right;
+	    margin-top: 3%;
+    margin-right: 12%;
+}
+.arrow img {
+	float: left;
+	    width: 1rem;
+}
+.immed {
+
+    border: none;
+    width: 82%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    background: #1b2130;
+    border-radius: 1.3rem;
+   color: #51E7D3;
+    font-size: 1.2rem;
+    margin-left: 9%;
+    margin-top: 20%;
+
+}
+.showmsg {
+    position: fixed;
+    text-align: center;
+    width: 70%;
+    height: 2rem;
+    line-height: 2rem;
+    background: #eaeaea;
+    left: 15%;
+    top: 80%;
+    font-size: 0.8rem;
+    border-radius: 1.5rem;
+    display: none;
+    z-index: 99;
+}

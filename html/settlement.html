@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    	<link rel="icon" href="../images/ico.ico">
+    	<link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    	<link rel="stylesheet" type="text/css" href="../css/settlement.css"/>
+
+		<title>确认还车</title>
+	</head>
+	<script type="text/javascript">
+	    document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    window.onresize = function(){
+	        document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    }
+	</script>
+	<body>
+	
+		<!----结算页面----->
+		<section class="account_page">
+			<div class="account">
+				<h2><em class="payments"></em>元</h2>
+				<p>还车成功</p>
+			</div>
+			<div class="allmoney">
+				<div class="consume_a">
+					<div class="con_title">消费明细</div>
+					<p>
+						<span>里程费<i class="allmileage">(0公里)</i></span>
+						<em class="mileage"></em>
+					</p>
+					<p>
+						<span>时长费<i class="alltimings">(00：20：39)</i></span>
+						<em class="time_me"></em>
+					</p>
+					<p>
+						<span>电量费用</span>
+						<em class="elec"></em>
+					</p>
+				</div>
+				
+				<div class="consume_b">
+					<div class="con_title">服务费用</div>
+					<p>
+						<span>挪车费</span>
+						<em class="sever_m"></em>
+					</p>
+				</div>
+				<div class="consume_c">
+					<span>总计费用</span>
+					<em class="allcount"></em>
+				</div>
+				<div class="consume_d">
+					<span>实际付款</span>
+					<em class="payment"></em>
+				</div>
+			</div>
+			<div class="tell">提示：消费不满9元，按最低9元计算！</div>
+			<div class="discount">本次订单为您优惠<span>4.5</span>元</div>
+			<button class="give_car">确认<em>(返回首页)</em></button>
+			
+		</section>
+		<!----结算页面----->
+		
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js" ></script>
+	<script type="text/javascript" src="../js/md/core.js"></script>
+	<script type="text/javascript" src="../js/md/cipher-core.js"></script>
+	<script type="text/javascript" src="../js/md/tripledes.js"></script>
+	<script type="text/javascript" src="../js/md/mode-ecb.js"></script>
+	<script type="text/javascript" src="../js/common.js" ></script>
+	<script type="text/javascript" src="../js/settlement.js" ></script>
+</html>

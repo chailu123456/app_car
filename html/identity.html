@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    	<link rel="icon" href="../images/ico.ico">
+    	<link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    	<link rel="stylesheet" type="text/css" href="../css/drivelince.css"/>
+		<title>实名认证</title>
+	</head>
+	<script type="text/javascript">
+	    document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    window.onresize = function(){
+	        document.documentElement.style.fontSize = document.documentElement.clientWidth / 25 + 'px';
+	    }
+	</script>
+	<body>
+		<header>
+			<span class="s_name"><a style="color: #51E7D3;" href="#">1实名认证</a></span>
+			<span class="two_j"><a href="#">2驾驶证认证</a></span>
+			<span class="g_money"><a href="#">3缴纳交通违法保证金</a></span>
+		</header>
+		<input class="jsz_a iner" onchange="imgPreview1(this)" type="file" accept="image/*"/>
+		<input class="jsz_b iner" onchange="imgPreview2(this)" type="file" accept="image/*"/>
+		<input class="personal iner" onchange="imgPreview3(this)" type="file" accept="image/*" />
+		<form id="form1" action="#" target="nm_iframe"  enctype="multipart/form-data">
+			<input type="text" class="scrent" name="req" value="">  
+			<div class="p_left">
+				<div class="carlice">
+					<p>1、身份证人像面</p>
+					<img id="jsz_a" src="../images/jsz_1.png"/>
+				</div>
+				<div class="carlice twos">
+					<p>2、身份证国徽面</p>
+					<img id="jsz_b" src="../images/jsz_2.png"/>
+				</div>
+			</div>
+			<div class="people">
+				<p>3、个人正面照</p>
+				<img id="self" src="../images/sfz_3.png"/>
+			</div>
+			<input type="value" class="names" placeholder="请输入您的姓名" />
+			<input type="value" class="j_code" maxlength="18" placeholder="请输入身份证号" />
+    		<input class="sub" type="submit" value="立即上传"/>
+		</form>
+		<div class="backmsg"></div>
+		<div class="showmsg"></div>
+		<iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+		
+		<div class="knows">
+			<img class="close" src="../images/close.png"/>
+			<p>微信端认证之后需1-2个工作日才能审核通过使用车辆，若你想马上用车，请下载奇速共享APP去认证，3秒审核，快速用车。</p>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js" ></script>
+	<script type="text/javascript" src="../js/md/core.js"></script>
+	<script type="text/javascript" src="../js/md/cipher-core.js"></script>
+	<script type="text/javascript" src="../js/md/tripledes.js"></script>
+	<script type="text/javascript" src="../js/md/mode-ecb.js"></script>
+	<script type="text/javascript" src="../js/common.js" ></script>
+	<!--<script type="text/javascript" src="../js/authentica.js" ></script>-->
+	<script>
+	
+	$('.knows').hide()
+	var token ='201801171503190304';
+	var key = 'HL1HBF6lLND721';
+	
+	var mainUser = JSON.parse(localStorage.getItem('main'));
+	console.log(mainUser)
+	var myhead,mylince_one,mylince_two;
+	
+	$('.knows').click(function(){
+		$(this).hide()
+	})
+	
+	function imgPreview1(fileDom){
+		//获取文件
+		var file;
+        file = fileDom.files[0];
+		console.log(file)
+		var image = new Image();
+		var reader = new FileReader();
+	    //files[0]对象是从input type=file中获取的file对象
+	   	reader.readAsDataURL(file);
+	    //将file对象base64转码成功后进入
+	    reader.onload = function (e) {
+	    	var imga = document.getElementById("jsz_a");
+	    	imga.setAttribute('class','has');
+            //图片路径设置为读取的图片
+	        imga.src = e.target.result;
+	        //声明img标签，并将未压缩的图片赋值给src属性
+	        image.src=this.result;
+	        image.onload = function() {
+	            //定义canvas的宽、高为72px
+	            var square = 2720;
+	            var canvas = document.createElement('canvas');
+	            canvas.width = square;
+	            canvas.height = square;
+	            var context = canvas.getContext('2d');
+	            context.clearRect(0, 0, square, square);
+	            var imageWidth;
+	            var imageHeight;
+	            var offsetX = 0;
+	            var offsetY = 0;
+	            //判断是根据原图片的宽压缩还是高压缩
+	            if (this.width > this.height) {
+	                imageWidth = Math.round(square * this.width / this.height);
+	                imageHeight = square;
+	                offsetX = - Math.round((imageWidth - square) / 2);
+	            } else {
+	                imageHeight = Math.round(square * this.height / this.width);
+	                imageWidth = square;
+	                offsetY = - Math.round((imageHeight - square) / 2);
+	            }
+	            context.drawImage(this, offsetX, offsetY, imageWidth, imageHeight);
+	            //data即为压缩为72x72的压缩图片的base64内容
+	            var data = canvas.toDataURL('image/jpeg');
+	            //将base64图片转file文件
+	            function dataURLtoFile(dataurl, filename) {
+					var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+					bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+					while(n--){
+					    u8arr[n] = bstr.charCodeAt(n);
+					}
+					return new File([u8arr], filename, {type:mime});
+				}
+			    mylince_one = dataURLtoFile(data,'we.jpg');
+	         
+	        };
+	    };
+	}
+	function imgPreview2(fileDom){
+        //获取文件
+		var file;
+        file = fileDom.files[0];
+		console.log(file)
+		var image = new Image();
+		var reader = new FileReader();
+	    //files[0]对象是从input type=file中获取的file对象
+	   	reader.readAsDataURL(file);
+	    //将file对象base64转码成功后进入
+	    reader.onload = function (e) {
+	    	var imga = document.getElementById("jsz_b");
+	    	imga.setAttribute('class','has');
+            //图片路径设置为读取的图片
+	        imga.src = e.target.result;
+	        //声明img标签，并将未压缩的图片赋值给src属性
+	        image.src=this.result;
+	        image.onload = function() {
+	            //定义canvas的宽、高为72px
+	            var square = 2720;
+	            var canvas = document.createElement('canvas');
+	            canvas.width = square;
+	            canvas.height = square;
+	            var context = canvas.getContext('2d');
+	            context.clearRect(0, 0, square, square);
+	            var imageWidth;
+	            var imageHeight;
+	            var offsetX = 0;
+	            var offsetY = 0;
+	            //判断是根据原图片的宽压缩还是高压缩
+	            if (this.width > this.height) {
+	                imageWidth = Math.round(square * this.width / this.height);
+	                imageHeight = square;
+	                offsetX = - Math.round((imageWidth - square) / 2);
+	            } else {
+	                imageHeight = Math.round(square * this.height / this.width);
+	                imageWidth = square;
+	                offsetY = - Math.round((imageHeight - square) / 2);
+	            }
+	            context.drawImage(this, offsetX, offsetY, imageWidth, imageHeight);
+	            //data即为压缩为72x72的压缩图片的base64内容
+	            var data = canvas.toDataURL('image/jpeg');
+	            //将base64图片转file文件
+	            function dataURLtoFile(dataurl, filename) {
+					var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+					bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+					while(n--){
+					    u8arr[n] = bstr.charCodeAt(n);
+					}
+					return new File([u8arr], filename, {type:mime});
+				}
+			    mylince_two = dataURLtoFile(data,'df.jpg');
+	          
+	        };
+	    };
+    }
+    function imgPreview3(fileDom){
+        //获取文件
+		var file = fileDom.files[0];
+		console.log(file)
+		var image = new Image();
+		var reader = new FileReader();
+	    //files[0]对象是从input type=file中获取的file对象
+	   	reader.readAsDataURL(file);
+	    //将file对象base64转码成功后进入
+	    reader.onload = function (e) {
+	    	var imga = document.getElementById("self");
+	    	imga.setAttribute('class','has');
+            //图片路径设置为读取的图片
+	        imga.src = e.target.result;
+	        //声明img标签，并将未压缩的图片赋值给src属性
+	        image.src=this.result;
+	        image.onload = function() {
+	            //定义canvas的宽、高为72px
+	            var square = 2720;
+	            var canvas = document.createElement('canvas');
+	            canvas.width = square;
+	            canvas.height = square;
+	            var context = canvas.getContext('2d');
+	            context.clearRect(0, 0, square, square);
+	            var imageWidth;
+	            var imageHeight;
+	            var offsetX = 0;
+	            var offsetY = 0;
+	            //判断是根据原图片的宽压缩还是高压缩
+	            if (this.width > this.height) {
+	                imageWidth = Math.round(square * this.width / this.height);
+	                imageHeight = square;
+	                offsetX = - Math.round((imageWidth - square) / 2);
+	            } else {
+	                imageHeight = Math.round(square * this.height / this.width);
+	                imageWidth = square;
+	                offsetY = - Math.round((imageHeight - square) / 2);
+	            }
+	            context.drawImage(this, offsetX, offsetY, imageWidth, imageHeight);
+	            //data即为压缩为72x72的压缩图片的base64内容
+	            var data = canvas.toDataURL('image/jpeg');
+	            //将base64图片转file文件
+	            function dataURLtoFile(dataurl, filename) {
+					var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+					bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+					while(n--){
+					    u8arr[n] = bstr.charCodeAt(n);
+					}
+					return new File([u8arr], filename, {type:mime});
+				}
+			    myhead = dataURLtoFile(data,'dw.jpg');
+	        };
+	    };
+    }
+	$(".sub").click(function () {
+		if($('#jsz_a').attr('class') && $('#jsz_b').attr('class') && $('#self').attr('class') && $('.names').val()!='' && $('.j_code').val()!=''){
+			var p_name = $('.names').val();
+			var j_codes = $('.j_code').val();
+			var userd = {
+	    		"userCode": mainUser.userId,
+	    		"authType": "1",
+	    		"certNumber":j_codes,
+	    		"certName":p_name
+			}
+			//将json转为字符串
+			var dtime=JSON.stringify(userd);
+			//加密字符串
+	    	var time_s = encryptByDES(dtime,key);
+			$('.scrent').val(time_s)	
+			$('.backmsg').show();
+           	$('.backmsg').html('信息上传中...')
+			var form_data = new FormData($('#form1')[0]);  
+	        form_data.append("headImg", myhead);
+	        form_data.append("backImg", mylince_one);
+	        form_data.append("frontImg", mylince_two);
+	        $.ajax({  
+	            url: adress +"/api/auth/review/audit",
+	            type: 'POST',  
+	            data: form_data,  
+	            cache: false,
+	            async: true,
+	            beforeSend: function(request) {
+		          	request.setRequestHeader("token", token);
+		       	},
+	            contentType: false,  
+	            processData: false,
+	            success:function(res){  
+	               var back = JSON.parse(res);
+	               console.log(back)
+	               var b= back.data;
+	               var getback = decryptByDESModeEBC(b,key);
+	               var getmsg = JSON.parse(getback);
+	               console.log(getmsg)
+	               if(getmsg.code<0){
+	               		$('.backmsg').show();
+		               	$('.backmsg').html('上传失败，请重新上传')
+		            
+			       		setTimeout(function(){
+			       			$('.backmsg').hide();
+			       		},2000)
+	              	}else{
+	              		$('.backmsg').show();
+		               	$('.backmsg').html('上传成功')
+			       		setTimeout(function(){
+			       			$('.backmsg').hide();
+			       			window.location.href='drivelince.html';
+			       		},2000)
+	              	}
+	            }   
+	        });  
+	        return false; 
+		}else{
+			$('.backmsg').show();
+			$('.backmsg').html('请上传完整信息')
+       		setTimeout(function(){
+       			$('.backmsg').hide();
+       		},2000)
+		}
+  	})
+		
+		
+	</script>
+</html>
